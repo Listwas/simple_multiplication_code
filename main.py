@@ -20,8 +20,6 @@ for line in f:
         f.close()
         f = open("players.txt", "a")
         f.write(f"\n{player_name}")
-        print("dodaje nowego uzytkownika")
-        time.sleep(3)
         break
 f.close()
 while True:
@@ -42,4 +40,4 @@ while True:
             break
 
 with open('logs.txt', 'a') as f:
-    f.write(f"\nplayer: {upperCase(player_name)} bad_results: {bad_result} good_results: {good_result}\n")
+    f.write(f"\nplayer: {(player_name)} bad_results: {bad_result} good_results: {good_result}\n")
