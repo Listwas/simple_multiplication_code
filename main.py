@@ -11,17 +11,11 @@ greater_range = int(input("give me the last number: "))
 
 player_name = input("type your name: ")
 
-f = open("players.txt", "r")
-for line in f:
-    line = line.split()
-    if line == player_name:
-        break
-    else:
-        f.close()
-        f = open("players.txt", "a")
-        f.write(f"\n{player_name}")
-        break
+
+f = open("players.txt", "a")
+f.write(f"\n{player_name}")
 f.close()
+
 while True:
     os.system('cls')
     for i in range(1):
