@@ -1,4 +1,0 @@
-
-bad_results: 0 good_results: 3
-
-player: ja bad_results: 1 good_results: 0
